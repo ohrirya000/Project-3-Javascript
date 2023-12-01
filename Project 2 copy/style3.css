@@ -1,0 +1,65 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: rgb(106, 17, 190);
+    text-align: center;
+}
+
+/*Creating the numbers*/
+.number{
+    border: solid 4px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    padding-top: 18px;
+    padding-left: 18px;
+    font-size: 30px;
+    background-color: black;
+    color: black;
+}
+
+img{
+    width: 100%;
+    height: 20%;
+}
+
+/*End paragraph*/
+.overall{
+    text-align: Center;
+    margin-left: 9%;
+    margin-right: 9%;
+}
+
+button{
+    align-content: center;
+    text-decoration: underline;
+    background-color: goldenrod;
+}
+
+.nextpage{
+    color: black;
+    background-color: goldenrod;
+    border: solid 2px;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 5px;
+    font-size: xx-large;
+    margin-left: 34%;
+    margin-right: 25%;
+}
+
+div{
+    text-align: center;
+}
+
+h2{
+    font-size: 30px;
+    color: gray;
+}
+
+p {
+    font-size: large;
+    color: gray;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Things 3</title>
+    <link href="style3.css" type="text/css" rel="stylesheet">
+    <script src="javascript.js" defer></script>
+</head>
+    <body style="background-color: rgb(240, 240, 240);">
+        <h1>Create a Tier List</h1>
+        <center>
+            <button onclick = changeSiteColor()>Change Website Colors</button>
+        </center>
+        <br>
+        <h1>Ranking:</h1>
+        <div class="titles" id="r1">
+           
+        </div>
+        <div class="titles" id="r2">
+           
+        </div>
+        <div class="titles" id="r3">
+           
+        </div>
+        
+        <a class="nextpage" href="FavActivities.html">Back</a>
+
+        <script>
+            var t1 = prompt("What is the #1 item/thing?");
+            var d1 = prompt("Description text of item 1:");
+            var t2 = prompt("What is the #2 item/thing?");
+            var d2 = prompt("Description text of item 2:");
+            var t3 = prompt("What is the #3 item/thing?");
+            var d3 = prompt("Description text of item 3:");
+            div1 = document.getElementById("r1");
+            div2 = document.getElementById("r2");
+            div3 = document.getElementById("r3");
+            var r1 = document.createElement("h2");
+            var r1p = document.createElement("p");
+            var r2 = document.createElement("h2");
+            var r2p = document.createElement("p");
+            var r3 = document.createElement("h2");
+            var r3p = document.createElement("p");
+            r1.innerHTML = "#1 " + t1;
+            r1p.innerHTML = d1;
+            r2.innerHTML = "#2 " + t2;
+            r2p.innerHTML = d2;
+            r3.innerHTML = "#3 "+ t3;
+            r3p.innerHTML = d3;
+            div1.appendChild(r1);
+            div1.appendChild(r1p);
+            div2.appendChild(r2);
+            div2.appendChild(r2p);
+            div3.appendChild(r3);
+            div3.appendChild(r3p);
+            alert("Tier List Created!")
+        </script>
+    </body>
+</html>

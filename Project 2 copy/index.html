@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Things Webpage</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <script src="javascript.js" defer></script>
+</head>
+    <body style="background-color:rgb(240, 240, 240);">
+        <h1>Favorite Movies/Shows</h1>
+        <center>
+            <button onclick = changeSiteColor1()>Change Website Colors</button>
+        </center>
+        <!--Code for Ahsoka paragraph-->
+        <h2 class="number">#1</h2>
+        <img src="Ahsoka image.jpeg">
+        <h2 class="Ahsoka">Ahsoka</h2>
+        
+            <p style="color: black" id="p1">This show is a new star wars show that is about a character named Ahsoka, 
+                and is closely tied to another show called Star Wars Rebels. 
+                "Ahsoka," the new show set in the expansive Star Wars universe, captivates
+                audiences with its compelling storytelling, rich character development, 
+                and a deep exploration of the iconic character, Ahsoka Tano. This series, 
+                a spin-off of the beloved animated series "Star Wars: The Clone Wars," 
+                successfully brings Ahsoka to life in live-action, thanks to Rosario Dawson's 
+                exceptional performance. "Ahsoka" excels in striking a perfect balance between 
+                honoring established Star Wars lore and introducing fresh narratives that keep 
+                fans eagerly anticipating each episode. Its commitment to exploring themes of 
+                identity, loss, and redemption, combined with top-notch production values, 
+                stunning visuals, and thrilling lightsaber battles, ensures that "Ahsoka" 
+                is a must-watch for both die-hard Star Wars enthusiasts and newcomers 
+                to the galaxy far, far away. It not only pays homage to the character's 
+                legacy but also sets the stage for exciting new adventures in the Star Wars universe.
+                Although I am still watching it, the show is really interesting to me 
+                because of the inclusion of previous shows/movies in it so far.
+            </p>
+        <br>
+        <!--Code for Breaking Bad paragraph-->
+        <h2 class="number">#2</h2>
+        <img src="breaking bad image.jpeg">
+        <h2 class="bb">Breaking Bad</h2>
+            <p style="color: black" id="p2">This show is one of my favorites because 
+                it keeps me hooked, maybe because it isn't like shows i've watched before. "Breaking Bad" stands as an indisputable masterpiece of television for several compelling reasons. At its core, the show presents an extraordinary character transformation, taking viewers on a harrowing journey from a mild-mannered chemistry teacher, Walter White, to a morally ambiguous drug kingpin, Heisenberg. This evolution, masterfully portrayed by Bryan Cranston, is a testament to the show's intricate character development. Moreover, "Breaking Bad" offers a meticulous exploration of the consequences of one's choices and actions, weaving a complex web of morality, family dynamics, and the allure of power. The writing, cinematography, and direction are consistently top-notch, creating a suspenseful and gritty atmosphere that keeps viewers on the edge of their seats. The show's ability to blend intense drama with moments of dark humor is remarkable, making it both emotionally impactful and wildly entertaining. With its unforgettable characters, gripping storytelling, and thought-provoking themes, "Breaking Bad" has rightfully earned its place as one of the greatest TV series of all time, leaving an indelible mark on the medium's landscape.
+            </p>
+        <br>
+        <!--Code for Battlestar paragraph-->
+        <h2 class="number">#3</h2>
+        <img src="battlestar galactica image.jpg">
+        <h2 class="bg">Battlestar Galactica</h2>
+            <p style="color: black" id="p3">My mom actually introduced me to this show, it is a space sci-fi show and it is one of my favorites because it has just been really good. "Battlestar Galactica" is a sci-fi masterpiece that has left an indelible mark on the genre for numerous reasons. This series, which reimagined a cult classic, is celebrated for its thought-provoking exploration of profound themes like survival, identity, and the human condition. It seamlessly blends gripping drama, complex character arcs, and ethical dilemmas against the backdrop of a post-apocalyptic universe where humanity teeters on the brink of extinction. The characters, portrayed by a talented ensemble cast, are multifaceted, relatable, and undergo remarkable development throughout the series. "Battlestar Galactica" is also lauded for its willingness to tackle contemporary social and political issues, adding depth and relevance to its storytelling. The show's innovative narrative structure and unexpected twists keep viewers engaged, while its striking visual effects and meticulously crafted world-building create a captivating and immersive experience. With its compelling storytelling, exceptional character dynamics, and a willingness to push boundaries, "Battlestar Galactica" has earned its place as a seminal work in the realm of science fiction television.
+            </p>
+        <br><br><br><br><br>
+        <!--Link to next page-->
+        <a href ="FavActivities.html">List of Favorite Activities</a>
+        <script>
+            var p1 = document.getElementById("p1")
+            var p2 = document.getElementById("p2")
+            var p3 = document.getElementById("p3")
+            function changeSiteColor1(){
+                if(document.body.style.backgroundColor == "rgb(240, 240, 240)"){
+                    document.body.style.backgroundColor = "rgb(25, 25, 25)";
+                    p1.style.color = "white";
+                    p2.style.color = "white";
+                    p3.style.color = "white";
+                } else {
+                    document.body.style.backgroundColor = "rgb(240, 240, 240)";
+                    p1.style.color = "black";
+                    p2.style.color = "black";
+                    p3.style.color = "black";
+                };
+            };
+            mode = prompt("Should the website be in dark mode? Type y for yes");
+            if(mode == "y"){
+                changeSiteColor1();
+            };
+        </script>
+    </body>
+</html>
